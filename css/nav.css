@@ -1,0 +1,119 @@
+/* 
+    Document   : menu
+    Created on : 2011.02.15., 20:02:15
+    Author     : Kucsó Attila
+    Description:
+        Purpose of the stylesheet follows.
+        Formed navigation section
+*/
+
+#nav {
+    /*background: #1CF;*/
+    padding: 0.15em;
+    margin-bottom: 20px;
+    /*font-weight: 600;
+    font-family: sanserif;*/
+    background-image: url('/img/banner.jpg');
+    width: 896px;
+    height: 105px;
+    border: none;
+}
+
+.nav li {
+    /*list-style: none;*/   
+    display: inline;
+    /*margin-right: 10px;*/
+    position: relative;
+}
+
+.nav ul {
+    padding: 0px;
+    float: left;
+    margin-top: 45px;
+}
+
+.nav a {
+    /*color: #000;*/
+    text-decoration: none;
+    /*border: 1px solid #ccc;*/
+    /*padding: 0.25em 0.5em;*/
+}
+
+.nav a:hover {
+    /*color: #F8DD47;
+    background: #757575;*/
+    /*border: 1px solid #F8DD47;*/
+}
+
+.nav li ul{
+    background: #9CF;
+    display: none;
+    height: auto;
+    position: absolute; 
+    /*width:250px;*/
+    z-index:200;
+    /*margin-top: 4px;*/
+    margin: 0 0 0 10px;
+    padding: 0px;
+    top: 19px;
+    left: 0;
+}
+
+.nav li:hover ul{
+    display:block;
+}
+
+.nav li li {
+    display:block;
+    margin: 0 0 0 0;
+}
+
+.nav li ul a{
+    display: block;
+    margin: 0 0 0 0;
+    
+    color: #000;
+    text-decoration: none;
+    /*border: 1px solid #ccc;*/
+    padding: 0.25em 0.5em;
+}
+
+.nav li ul a:hover{
+    color: #F8DD47;
+    background: #757575;
+}
+
+#mainMenu{
+    /*background-image: url('/img/button_kezdo.jpg');
+    width: 0px;
+    height: 0px;*/
+    /*border: none;
+    
+    list-style-image: url('/img/button_kezdo.jpg');*/
+}
+
+.navImage{
+    margin-left: 10px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    border: none;
+    /*border-left: 1px solid #000;*/
+    /*border-top : 1px solid #000;*/
+    /*border-right: 1px solid #000;*/
+}
+.navImage:hover {
+    /*border-left: 1px solid #a0a;*/
+    /*border-top: 1px solid #a0a;*/
+    /*border-right: 1px solid #a0a;*/
+}
+
+
+
+.search{
+    float: left;
+}
+
+.language{
+    margin-left: 250px;
+    float:left;
+}

@@ -1,0 +1,37 @@
+/* 
+    Document   : contact
+    Created on : 2012.03.24., 13:17:41
+    Author     : Ati
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.personal label {
+    /*display: block;*/
+    float: left;
+    /*font-size: 12px;*/
+    margin: 4px 0 0;
+    width: 80px;
+}
+
+.contact label {
+    /*display: block;*/
+    float: left;
+    /*font-size: 12px;*/
+    /*margin: 4px 0 0;*/
+    width: 180px;
+    
+}
+
+.contact p{
+    margin-top: 10px 0 0;
+}
+
+.contact{
+    /*border: 0 none;*/
+    border: 2;
+}

@@ -1,0 +1,75 @@
+/* 
+    Document   : news
+    Created on : 2012.03.11., 20:37:11
+    Author     : ati
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+.news_row {
+    padding-left : 10px;
+    padding-bottom: 10px;
+    width: 95%;
+    overflow: hidden;
+}
+
+.news_title {
+    width: 500px;
+    float: left;
+    background-color: #E8DDCF;
+}
+
+.news_date {
+    width: 200px;
+    float: left;
+    background-color: #E8DDAA;
+    padding-left: 20px;
+}
+
+.news_news {
+    float: left;
+    width: 700px;
+    background-color: #B1C4EC;
+    margin: 0;	
+    padding: 0;
+}
+
+
+.news_box{
+    float: left; 
+    width: 450px; 
+    /*background-color: #DDA;*/
+    padding: 0;
+    margin: 0;
+}
+
+.news_item{
+    background-color: #EEE;
+    padding: 0;
+}
+
+.news_box_title {
+    margin: 20px 40px 0 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: arial;
+    text-decoration: underline;
+    color: green;
+}
+
+.news_box_news{
+    margin: 0 40px 0 40px;
+}
+
+.news_box_link{
+    margin: 0 40px 20px 40px;
+}

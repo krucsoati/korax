@@ -1,0 +1,37 @@
+/* 
+    Document   : product
+    Created on : 2012.03.27., 21:48:26
+    Author     : ati
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+.product {
+    margin-top: 20px;
+}
+
+.prod_name {
+    width: 600px;
+    background-color: #DEA8FF;
+    padding-left: 10px
+}
+
+.prod_guide {
+    width: 300px;
+    background-color: #C2AB8C;
+}
+
+.prod_description {
+    width: 97%;
+    background-color: #ffe;
+    padding: 10px;
+}

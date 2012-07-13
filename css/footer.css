@@ -1,0 +1,20 @@
+/* 
+    Document   : footer
+    Created on : 2012.06.30., 14:19:48
+    Author     : Ati
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.footer {
+    /*height: 100px;
+    width: 100%;
+    background-color: #C2AB8C;*/
+}
+
+.footerBar {
+    background-image: url('/img/footer.jpg');
+    width: 900px;
+    height: 12px;
+    border: none;
+}

@@ -1,0 +1,22 @@
+/* 
+    Document   : banner
+    Created on : 2012.03.13., 9:37:42
+    Author     : Ati
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.search {
+    width: 400px;
+}
+
+.banner {
+    /*b4ackground-color: #01C4EC;*/
+    /*height: 2em; */
+    margin-bottom: 20px;
+    padding: 10px;
+}
