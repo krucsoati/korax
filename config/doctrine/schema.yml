@@ -1,0 +1,66 @@
+Product:
+  connection: doctrine
+  tableName: product
+  columns:
+    category_id:    { type: integer(20) }
+    name_hu:        { type: varchar(100)}
+    name_en:        { type: varchar(100)}
+    name_ru:        { type: varchar(100)}
+    name_pl:        { type: varchar(100)}
+    description_hu: { type: text }
+    description_en: { type: text }
+    description_ru: { type: text }
+    description_pl: { type: text }
+    guide_hu:       { type: varchar(100)}
+    guide_en:       { type: varchar(100)}
+    guide_ru:       { type: varchar(100)}
+    guide_pl:       { type: varchar(100)}
+  options:          { type: MYISAM, collate: utf8_hungarian_ci, charset: utf8 }
+  relations:      
+    Category:       { onDelete: cascade, local: category_id, foreign: id}
+      
+Category:
+  connection: doctrine
+  tableName: category
+  columns:
+    group_type:     { type: varchar(10) }
+    name_hu:        { type: varchar(100)}
+    name_en:        { type: varchar(100)}
+    name_ru:        { type: varchar(100)}
+    name_pl:        { type: varchar(100)}
+  options:          { type: MYISAM, collate: utf8_hungarian_ci, charset: utf8 }
+    
+News:
+  connection: doctrine
+  tableName: news
+  columns:
+    create_date:    { type: timestamp, notnull: true }
+    title_hu:       { type: varchar(100)}
+    title_en:       { type: varchar(100)}
+    title_ru:       { type: varchar(100)}
+    title_pl:       { type: varchar(100)}
+    news_hu:        { type: text}
+    news_en:        { type: text}
+    news_ru:        { type: text}
+    news_pl:        { type: text}
+  options:          { type: MYISAM, collate: utf8_hungarian_ci, charset: utf8 }
+
+User:
+  connection: doctrine
+  tableName: user
+  columns:
+    email:          { type: varchar(100) }
+    name:           { type: varchar(100) }
+    tel:            { type: varchar(20) }
+  options:          { type: MYISAM, collate: utf8_hungarian_ci, charset: utf8 }
+    
+Message:
+  connection: doctrine
+  tableName: message
+  columns:
+    user_id:        { type: integer(20) }
+    theme:          { type: integer(1) }
+    mesage:         { type: text }
+  options:          { type: MYISAM, collate: utf8_hungarian_ci, charset: utf8 }
+  relations:      
+    User:           { onDelete: cascade, local: user_id, foreign: id, alias: User}
