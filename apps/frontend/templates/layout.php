@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div id="nav" class="nav">
-		<img id="logo1111" src="/img/logo.png" style="float: left; margin-top: 5px; margin-left: 5px" onFocus="alert('aaaaaaaaaaaa')">
+		<img id="logo1111" src="/img/logo.png" style="float: left; margin-top: 5px; margin-left: 5px" >
                 <ul>
                     <li><a id="mainMenu" href="<?php print url_for('main') ?>"><img class="navImage" src="/img/kezdolap_<?php print $sf_user->getAttribute('menuPic') == 'mainMenu' ? 'focus' : 'default' ?>_<?php print $sf_user->getCulture() ?>.jpg" /></a></li>
                     <li><a id="carMenu" href="<?php print url_for('cegunkrol') ?>"><img class="navImage" src="/img/cegunkrol_<?php print $sf_user->getAttribute('menuPic') == 'carMenu' ? 'focus' : 'default' ?>_<?php print $sf_user->getCulture() ?>.jpg" /></a></li>

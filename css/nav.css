@@ -9,7 +9,7 @@
 
 #nav {
     /*background: #1CF;*/
-    padding: 0.15em;
+    /*padding: 0.15em;*/
     margin-bottom: 20px;
     /*font-weight: 600;
     font-family: sanserif;*/
@@ -17,6 +17,7 @@
     width: 896px;
     height: 105px;
     border: none;
+    
 }
 
 .nav li {
@@ -53,7 +54,7 @@
     /*width:250px;*/
     z-index:200;
     /*margin-top: 4px;*/
-    margin: 0 0 0 10px;
+    margin: 0 0 0 0;
     padding: 0px;
     top: 19px;
     left: 0;
@@ -75,7 +76,7 @@
     color: #000;
     text-decoration: none;
     /*border: 1px solid #ccc;*/
-    padding: 0.25em 0.5em;
+    /*padding: 0.25em 0.5em;*/
 }
 
 .nav li ul a:hover{
@@ -93,10 +94,10 @@
 }
 
 .navImage{
-    margin-left: 10px;
-    margin-bottom: 0px;
+   /* margin-left: 10px;*/
+    margin: 0px;
     text-decoration: none;
-    border: none;
+    /*border: none;*/
     /*border-left: 1px solid #000;*/
     /*border-top : 1px solid #000;*/
     /*border-right: 1px solid #000;*/
