@@ -30,6 +30,7 @@
                         <ul>
                             <li><a id="product_1" href="<?php print url_for('amerin_mugyantas_padlok') ?>"><?php print __("Amerin műgyantás padlók") ?></a></li>
                             <li><a id="product_2" href="<?php print url_for('villamos_ipari_mugyantak') ?>"><?php print __("Villamos ipari műgyanták") ?></a></li>
+                            <li><a id="product_3" href="<?php print url_for('lakosagi_termekek') ?>"><?php print __("Lakóssági termékek") ?></a></li>
                         </ul>
                     </li>
                     <li><a id="newsMenu" href="<?php print url_for('hirlevel') ?>"><img class="navImage" src="/img/hirlevel_<?php print $sf_user->getAttribute('menuPic') == 'newsMenu' ? 'focus' : 'default' ?>_<?php print $sf_user->getCulture() ?>.jpg" /></a></li>

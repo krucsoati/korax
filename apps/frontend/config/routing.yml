@@ -41,6 +41,10 @@ amerin_mugyantas_padlok:
 villamos_ipari_mugyantak:
   url: /:sf_culture/villamos_ipari_mugyantak
   param: { module: product, action: villamos_ipari_mugyantak }
+  
+lakosagi_termekek:
+  url: /:sf_culture/lakosagi_termekek
+  param: { module: product, action: lakosagi_termekek }
 
 
 localized_homepage:

@@ -43,7 +43,14 @@ class productActions extends sfActions {
         $this->setTemplate('index');
     }
     
-    
+    public function executeLakosagi_termekek(sfWebRequest $request) {
+	$this->getUser()->setAttribute('menuPic', 'productMenu');
+        $this->title = 'Lakossági termekek';
+        $this->categories = Doctrine_Core::getTable('Category')->findBy('group_type', 'lakossag');
+        $this->getUser()->setAttribute('leftMenuParams', array('site' => 'lakossagi', 'value' => $this->categories));
+        $this->setTemplate('index');
+    }
+
     public function executeShow(sfWebRequest $request) {
         $this->products = Doctrine_Core::getTable('Product')->findBy('category_id', $request->getParameter('id')); # print var_export($this->products, true); exit;
         $this->category = Doctrine_Core::getTable('Category')->find(array($request->getParameter('id')));
